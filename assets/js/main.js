@@ -5,4 +5,13 @@
     const href = a.getAttribute("href");
     if (href === here) a.classList.add("active");
   });
+
+  document.querySelectorAll("[data-accordion]").forEach(group=>{
+    group.querySelectorAll("[data-accordion-toggle]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const item = btn.closest(".accordion-item");
+        item.classList.toggle("open");
+      });
+    });
+  });
 })();
