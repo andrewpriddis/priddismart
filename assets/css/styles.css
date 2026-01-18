@@ -248,6 +248,22 @@ h1{font-size:56px;line-height:1.05;margin:10px 0 16px}
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:14px;
 }
+.video-section .container{max-width:var(--max);}
+.video-embed{
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  background:#000;
+}
+.video-embed iframe{
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+  border:0;
+}
 .card.mini{
   background:var(--card);
   border:1px solid var(--border);
