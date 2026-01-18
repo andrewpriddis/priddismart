@@ -70,6 +70,10 @@ img{display:block;max-width:100%}
   max-width:100%;
   padding:0;
 }
+.hero-inset .container{
+  max-width:var(--max);
+  padding:0 22px;
+}
 .hero-grid{
   display:grid;
   grid-template-columns:1fr;
